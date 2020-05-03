@@ -1,0 +1,678 @@
+
+.html{
+    font-family: sans-serif;
+    min-width: 1200px;
+    min-height: 1000px;
+    background-color: #2c2c2c;
+} 
+
+
+
+
+/******NAV BAR******/
+
+.navbar img{
+    width: 100px;
+    height: 40px;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.navbar {
+    margin-top: -47px;
+    margin-left: 150px;
+    overflow:auto;
+    background-color: #000000;
+    
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    margin-left: 50px;
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: sans-serif;
+    margin: 0;
+}   
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #B2EBF9;
+    color: #000000;
+}   
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    margin-left: 0px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+
+
+
+/********SLIDESHOW*********/
+       
+*{box-sizing: border-box}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin:0
+}
+
+.mySlides {display: none}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 646px;
+    overflow:auto;
+    border: solid 2px;
+    border-color: grey;
+    position:relative;
+    margin: 20px 150px 20px 150px;
+    border-radius: 20px;
+    cursor:pointer;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    background-color: #2c2c2c;
+    cursor:pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/******On hover, add a black background color with a little bit see-through*****/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/******TEXT******/
+.text {
+    align-content: center;
+    background-color: white;
+    color: #000000;
+    font-size: 15px;
+    position:relative;
+    font-family: sans-serif;
+    height: 100%;
+    text-align: center;
+}
+
+/******Number text (1/4 etc)******/
+.numbertext {
+    background: #2c2c2c;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/******DOTS******/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {
+        position: fixed;
+        font-size: 11px}
+}
+
+
+/*****the small boxes of the news******/
+div.gallery {
+    background-color: #ffffff;
+    margin: 20px 5px 0px 5px;
+    border: 2px solid #ccc;
+    float:left;
+    width: 220px;
+    border-radius: 20px;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+     border-radius: 20px;
+}
+
+div.desc {
+    align-content: center;
+    padding: 10px;
+    text-align:center;
+    margin-top: 0px;
+    left: 50%;
+    top: 50%;
+}
+
+.NEWSboxes{
+    
+    margin-left: 15px;   
+}
+
+/******CONTENT******/
+#all {
+    border-top-right-radius: 20PX;
+    border-top-left-radius: 20PX;
+    width: 950px;
+    height: 1400px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 199px;
+    margin-right: 199px;
+    padding-left: 0px;
+    border: 2px solid gray;
+    background-color:#ffffff;
+}
+
+#eplleagus {
+    border-top-right-radius: 20PX;
+    border-top-left-radius: 20PX;
+    margin-top: 10px;
+    width: 960px;
+    height: 1400px;
+    margin-right: auto;
+    padding-left: 0px;
+    border: 2px solid gray;
+    background-color:#ffffff;
+}
+
+#SAleagus{
+    border-top-right-radius: 20PX;
+    border-top-left-radius: 20PX;
+    margin-top: 10px;
+    width: 960px;
+    height: 1400px;
+    margin-right: auto;
+    padding-left: 0px;
+    border: 2px solid gray;
+    background-color:#ffffff;
+}
+
+
+
+#NEWSboxes{
+    
+    margin-left: 25px;   
+}
+
+
+
+/* log in */
+.body{
+    
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+}
+.Loginbox{
+    width: 350px;
+    height: 450px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow:  5px 5px 5px #000000;
+
+}
+.avater{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin:0;
+    padding: 0px 0px 20px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.Loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    
+}
+
+.Loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Loginbox input[type="text"],input[type="password"],input[type="email"],input[type="phonenumber"]{
+    border: none;
+    border-bottom: 3px solid #B2EBF9;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:#fff;
+    font-size:16px;    
+}
+
+.Loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #B2EBF9;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.Loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.Loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.Loginbox a:hover{
+    color: #ffc107;
+}
+
+#backgroud{
+    background-color: #2c2c2c;
+}
+
+h2{
+   
+    border-bottom: 5px solid #B2EBF9;
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+/* create an account */
+
+.body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.createanaccountbox{
+    width: 350px;
+    height: 650px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 30px 130px 30px;
+    box-shadow:  5px 5px 5px #000000;
+    margin-top: 130px;
+
+}
+.avater{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin:0;
+    padding: 0px 0px 20px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.createanaccountbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+.createanaccountbox input[type="text"],input[type="password"],input[type="email"],input[type="phonenumber"]{
+    border: none;
+    border-bottom: 3px solid #B2EBF9;
+    background: transparent;
+    outline: inherit;
+    height: 40px;
+    color:#fff;
+    font-size:16px; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+.button {
+  border: none;
+    outline: none;
+    height: 40px;
+    background: #B2EBF9;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 20px;
+     width: 100%;
+    padding: 10px 135px;
+}
+
+
+
+
+
+.button:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000000;
+}
+
+.createanaccountbox a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+ 
+}
+
+.createanaccountbox a:hover{
+    color: #000000;
+}
+
+#backgroud{
+    background-color: #2c2c2c;
+}
+
+h2{
+   
+    border-bottom: 5px solid #B2EBF9;
+    padding-left: 50px;
+}
+
+
+
+/**** create an account 2****/
+
+#CAC{
+
+    font-family: sans-serif;
+    min-width:auto;
+    min-height: auto;
+    background-color: #2c2c2c;
+
+}
+
+
+.body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.createanaccountbox2{
+    width: 350px;
+    height: 450px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 30px 30px 30px;
+    box-shadow:  5px 5px 5px #000000;
+    margin-top: 10px;
+
+}
+.avater{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin:0;
+    padding: 0px 0px 20px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.createanaccountbox2 p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+.createanaccountbox2 input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #B2EBF9;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 20px;
+     width: 100%;
+    margin-bottom: 20px;
+}
+
+.createanaccountbox2 input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.createanaccountbox2 a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+
+.createanaccountbox2 a:hover{
+    color: #ffc107;
+}
+
+
+
+
+
+
+
+
+
+/******LEAGUE STANDING******/
+
+
+
+.Tables{
+    margin-top: 10px;
+    margin-right:0px;
+    text-align: center;
+    padding: 0px 0px 0px 0px ;
+    border-color: #B2EBF9;
+    float: right;
+}
+
+.Tables td{
+    
+    padding-top: 5px;
+    padding-right: 0PX;
+    padding-bottom: 5px;
+    border: 5px;
+    background-color: #ffffff;
+}
+
+
+
+
+.champions{   
+    color: blue
+}
+.europa{
+    color: orange;
+}
+.danger{
+    color: red;
+}
+
+
+/*****FOOTER******/
+#Footer {
+    text-align: center;
+    background-color: #000000;
+    
+    color: #ffffff;
+   
+    padding:  20px 0px 20px;
+    
+}
+#Footer p{
+    
+    text-decoration: none;
+    text-decoration-color: #ffffff;
+    text-decoration-line: none;
+}
+
+.heading{
+    border: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	background-color: #B2EBF9;
+	display: block;
+}
+
+
+
